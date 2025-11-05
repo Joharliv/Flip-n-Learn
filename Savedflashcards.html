@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Flashcards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="quizlet2.css">
+    <style>
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: absolute;
+            color: #777;
+            margin-top: 90px;
+            margin-left: 600px;
+            font-size: 55px;
+            font-family: serif;
+
+        }
+
+        .flashcard-container {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            perspective: 1000px;
+            margin-bottom: 20px;
+            margin-left: 420px;
+            margin-top: 80px;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease;
+            cursor: pointer;
+        }
+
+        .flashcard.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-front {
+            background-color: #00093e;
+            color: white;
+            border: 10px solid #fffba7;
+            font-size: 2rem;
+        }
+
+
+        .card-back {
+            background-color: #fffba7;
+            color: #000;
+            border: 10px solid #0f1a57;
+            transform: rotateY(180deg);
+            font-size: 1.7rem;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card-back img {
+            max-width: 50%;
+            /* Ensures the image fits well within the card */
+            height: auto;
+            margin: 10px auto;
+            /* Centers the image with space around */
+        }
+
+        .card-back p {
+            margin: 0 0 10px;
+            /* Adds space below the definition text */
+        }
+
+        .card-back audio {
+            margin: 10px auto;
+            /* Centers the audio element with space */
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: -60px;
+            margin-left: 300px;
+            ;
+        }
+
+        .nav-buttons button {
+            background-color: #00093e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 55px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s;
+
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #fffba7;
+            color: #000;
+            border: 2px solid #00093e;
+            transform: scale(1.10);
+        }
+
+        .flashcard-set-title {
+            text-align: center;
+            font-size: 20px;
+            margin-top: -40px;
+            position: absolute;
+            margin-left: 550px;
+        }
+
+        .delete-button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: -90px;
+            cursor: pointer;
+            display: block;
+            margin-left: 760px;
+            margin-right: auto;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .delete-button:hover {
+            background-color: #9e0505;
+            transform: scale(1.12);
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-top: 50px;
+            color: #00093e;
+            margin-left: 300px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i><span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                    <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved
+                            Flashcards</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i>
+                    <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+    <h1>Saved Flashcards</h1>
+
+    <div id="flashcard-sets-container"></div>
+
+    <script>
+        async function openDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open("FlashcardDB", 1);
+                request.onerror = event => reject("Database error: " + event.target.error);
+                request.onsuccess = event => resolve(event.target.result);
+            });
+        }
+
+        async function loadFlashcards() {
+            const db = await openDB();
+            const transaction = db.transaction("flashcards", "readonly");
+            const store = transaction.objectStore("flashcards");
+            const request = store.getAll();
+
+            return new Promise((resolve, reject) => {
+                request.onsuccess = event => resolve(event.target.result);
+                request.onerror = event => reject("Error reading flashcards: " + event.target.error);
+            });
+        }
+
+        async function deleteFlashcardSet(setId) {
+            const db = await openDB();
+            const transaction = db.transaction("flashcards", "readwrite");
+            const store = transaction.objectStore("flashcards");
+            const request = store.delete(setId);
+
+            return new Promise((resolve, reject) => {
+                request.onsuccess = () => {
+                    alert("Flashcard set deleted successfully!");
+                    resolve();
+                };
+                request.onerror = event => reject("Error deleting flashcard set: " + event.target.error);
+            });
+        }
+
+        function createFlashcard(cardData) {
+            const card = document.createElement("div");
+            card.classList.add("flashcard");
+
+            const cardFront = document.createElement("div");
+            cardFront.classList.add("card-face", "card-front");
+            cardFront.innerHTML = `<h3>${cardData.term}</h3>`;
+
+            const cardBack = document.createElement("div");
+            cardBack.classList.add("card-face", "card-back");
+            cardBack.innerHTML = `
+                <p>${cardData.definition}</p>
+                ${cardData.images.map(img => `<img src="${img}" alt="Image">`).join("")}
+                ${cardData.audio.map(aud => `<audio controls><source src="${aud}" type="audio/mpeg"></audio>`).join("")}
+            `;
+
+            card.appendChild(cardFront);
+            card.appendChild(cardBack);
+            card.addEventListener("click", () => card.classList.toggle("is-flipped"));
+
+            return card;
+        }
+
+        function createFlashcardSet(setData) {
+            const setContainer = document.createElement("div");
+            setContainer.classList.add("flashcard-set");
+
+            const setTitle = document.createElement("div");
+            setTitle.classList.add("flashcard-set-title");
+            setTitle.textContent = `${setData.title} - ${setData.description}`;
+            setContainer.appendChild(setTitle);
+
+            const flashcardContainer = document.createElement("div");
+            flashcardContainer.classList.add("flashcard-container");
+            setContainer.appendChild(flashcardContainer);
+
+            let currentIndex = 0;
+
+            function displayFlashcard(index) {
+                flashcardContainer.innerHTML = "";
+
+                if (setData.flashcards[index]) {
+                    const flashcard = createFlashcard(setData.flashcards[index]);
+                    flashcardContainer.appendChild(flashcard);
+                }
+            }
+
+            const navButtons = document.createElement("div");
+            navButtons.classList.add("nav-buttons");
+
+            const prevButton = document.createElement("button");
+            prevButton.textContent = "Previous";
+            prevButton.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    displayFlashcard(currentIndex);
+                }
+            });
+
+            const nextButton = document.createElement("button");
+            nextButton.textContent = "Next";
+            nextButton.addEventListener("click", () => {
+                if (currentIndex < setData.flashcards.length - 1) {
+                    currentIndex++;
+                    displayFlashcard(currentIndex);
+                }
+            });
+
+            navButtons.appendChild(prevButton);
+            navButtons.appendChild(nextButton);
+            setContainer.appendChild(navButtons);
+
+            // Add Delete Button
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete This Set";
+            deleteButton.classList.add("delete-button");
+            deleteButton.addEventListener("click", async () => {
+                if (confirm("Are you sure you want to delete this flashcard set?")) {
+                    await deleteFlashcardSet(setData.id);
+                    setContainer.remove(); // Remove the set from the DOM
+                }
+            });
+
+            setContainer.appendChild(deleteButton);
+
+            displayFlashcard(currentIndex);
+            return setContainer;
+        }
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            const flashcardSets = await loadFlashcards();
+            const container = document.getElementById("flashcard-sets-container");
+
+            if (flashcardSets.length > 0) {
+                flashcardSets.forEach(set => {
+                    const setElement = createFlashcardSet(set);
+                    container.appendChild(setElement);
+                });
+            } else {
+                container.innerHTML = "<p>No saved flashcards found.</p>";
+            }
+        });
+    </script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

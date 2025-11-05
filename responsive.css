@@ -1,0 +1,132 @@
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) 
+{
+    .container::before{
+        content:'';
+        position: absolute;
+        height:150px;
+        width:150px;
+        border-radius: 50%;
+        background: linear-gradient(#ff0454,#ebdc01);
+        transform: translate(-300px,-380px);
+    }
+    .container::after{
+        content:'';
+        position: absolute;
+        height:150px;
+        width:150px; 
+        border-radius: 50%;
+        background: linear-gradient(#0800ff,#ff024e);
+        transform: translate(310px,350px);
+    }
+    .container .ball-3{
+        transform: translate(150px,80px);
+    } 
+    .container .box {
+        height: 100vh;
+        width: 75%;
+    }
+    .container .box nav .p2{
+        display: none
+    }
+    .container .box nav ul li a:hover {
+        color: #ffb804;
+    }
+    .container .box .contains .section-1 {
+        position:absolute; 
+        margin-top: 150px;
+    }
+    .container .box .contains .section-1 h1 {
+        font-size: 50px;
+    }
+    .container .box .contains .section-1 h3 {
+        font-size: 30px;
+    }
+    .container .box .contains .section-1 p {
+        margin-top:10px ;
+        font-size: 25px;
+    }
+    .container .box .contains .section-2 img{
+        width: 450px;
+        height: 250px;
+        transform: translate( -20px, 500px );
+        border-radius: 20px;   
+    }
+    .container .box .contains .start{
+        font-size: 15px;
+        font-family: serif;
+        letter-spacing: 1px;
+        transition:0.3s ease all;
+        z-index: 1;
+    }
+    .footer{
+        height: 470px;
+        bottom: -470px;
+    }
+}
+
+
+/* For large mobile phones and smaller tablets */
+ @media (max-width: 700px) {
+ 
+    .container::before{
+        content:'';
+        position: absolute;
+        height:120px;
+        width:120px;
+        border-radius: 50%;
+        transform: translate(-130px,-110px);
+    }
+    .container::after{
+        content:'';
+        position: absolute;
+        height:120px;
+        width:120px;
+        border-radius: 50%;
+        transform: translate(130px,150px);
+    }
+    .container .ball-3{
+        transform: translate(30px,50px);
+    } 
+    .container .box .contains .section-1 {
+        position:absolute; 
+        margin-top: 150px;
+        margin-left: -60px
+    }
+    .container .box nav ul li{
+        display: none;
+    }
+    .container .box .contains .section-1 h1 {
+        font-size: 25px;
+    }
+    .container .box .contains .section-1 h3 {
+        font-size: 20px;
+    }
+    .container .box .contains .section-1 p {
+        margin-top:10px ;
+        font-size: 15px;
+    }
+    .contains .section-1 .button{
+        display: none;
+    }
+    .container .box .contains .section-2 img{
+        width: 200px;
+        height: 150px ;
+        transform: translate( -50px, 400px );
+        border-radius: 20px;   
+    }
+    .container .box .contains .start{
+        font-size: 15px;
+        font-family: serif;
+        letter-spacing: 1px;
+        transition:0.3s ease all;
+        z-index: 1;
+        margin-top: 50px;
+    }
+    .footer{
+        display: none;
+    }
+} 
+ 

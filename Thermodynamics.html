@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+              <label for="profile-upload" class="avatar-placeholder">
+                  <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                  <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+              </label>
+              <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+              <h4>Profile</h4>
+        </header>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Overview</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/thermodynamics2.jpg">
+                  <ul>
+                    <li> Thermodynamics is the study of heat, work, and the energy transformations that occur in physical systems. It’s foundational in physics and engineering, especially for understanding engines, refrigerators, and other systems where energy transfer is critical.</li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/cLSYrrnjauo?si=DQ-qSurJCiod8riJ')" class="youtube-button">
+                  </div>
+                 
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Laws of Thermodynamics</p>
+        </div>
+        <div class="card-back">
+            <img src="images/thermodynamics.jpg">
+            <ul>
+            <li><h4>Zeroth Law:</h4> Defines thermal equilibrium and temperature.</li><br>
+               <li><h4>First Law:</h4>Energy cannot be created or destroyed, only transferred or transformed.</li> <br>
+               <li><h4>Second Law:</h4>Entropy increases; energy efficiency limits.</li><br>
+               <li><h4>Third Law:</h4>As a system approaches absolute zero(0 Kelvin), the entropy of the system approaches a constant minimum.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Key Concepts</p>
+        </div>
+        <div class="card-back">
+            <img src="images/key concepts thermo.jpeg">
+            <ul>
+                <li><h4>Temperature:</h4>The measure of the average kinetic energy of particles.</li><br>
+                <li><h4>Heat and Work:</h4>Forms of energy transfer; heat flows from high to low temperature, and work involves force over a distance.</li><br>
+                <li><h4>Entropy:</h4>A measure of disorder or randomness in a system.</li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/O7HwhkYt6YU?si=l9GpPfPU31_gAiZP')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Applications of thermodynamics</p>
+        </div>
+        <div class="card-back">
+            <img src="images/thermo applications.jpg">
+            <ul>
+                <li><h4>Engines and Refrigeration:</h4>Fundamental in designing engines and refrigerators.</li><br>
+                <li><h4>Metallurgy:</h4>Used to understand melting and solidification processes in materials.</li><br>
+                <li><h4>Climate Science: </h4>Understanding heat and energy flow in atmospheric and ocean systems.</li>
+            </ul>
+          
+        </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

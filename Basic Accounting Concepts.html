@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Basic Accounting Concepts</p>
+              </div>
+              <div class="card-back">
+                <img src="images/Basic Accounting.png">
+                  <ul>
+                  <li>
+                    Accounting is the process of recording, summarizing, analyzing, and reporting financial transactions for a business or individual. It involves tracking income, expenses, assets, and liabilities to provide a clear picture of financial performance and position. 
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/j7CbFtbO5N8?feature=shared', '_blank')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Double-Entry Accounting</p>
+        </div>
+        <div class="card-back">
+          <img src="images/Double-Entry-Accounting.png">
+        <ul>
+            <li>
+                Double-Entry Accounting is a system where each financial transaction affects at least two accounts, ensuring that the accounting equation remains balanced. For every debit, there must be a corresponding credit.
+            </li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/Zk-oULvR-Us?feature=shared')" class="youtube-button">
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Debits and Credits</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Debit and Credit.png">
+        <ul>
+            <li>
+            Debits and Credits are entries used to record changes in accounts. Debits increase assets and expenses and decrease liabilities and equity, while credits increase liabilities, revenue, and equity and decrease assets.
+            </li>    
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/T9TAhkwufBU?feature=shared')" class="youtube-button">
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Revenue Recognition</p>
+        </div>
+        <div class="card-back">
+          <img src="images/revenue-recognition.webp">
+            <ul>
+                <li>
+                    The Revenue Recognition Principle states that revenue should be recognized when it is earned, regardless of when payment is received. This helps provide a more accurate reflection of financial performance.   
+                </li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/y8KReX9fbGY?feature=shared')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Materiality Principle</p>
+          </div>
+          <div class="card-back">
+          <img src="images/Materiality Principle.png">
+            <ul>
+              <li>
+                The Materiality Principle states that all significant information that could influence decision-making should be recorded and reported. Insignificant details, however, can be omitted to simplify financial statements.
+              </li>    
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/9Wk6WKHgB08?feature=shared')" class="youtube-button">
+          </div>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Periodic Table Structure</p>
+          </div>
+          <div class="card-back">
+            <img src="images/PeriodicTable.png">
+            <ul >
+              <li>The periodic table is arranged by atomic number with 7 periods (horizontal rows) and 18 groups (vertical columns). Each group shares chemical properties due to similar valence electrons.</li>
+         
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/0RRVV4Diomg?si=gMBS-i7vCJAdBkt_')" class="youtube-button">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Periodic Trends: Atomic Radius</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Atomic-radius.jpg">
+                <ul >
+                  <li>Decreases across a period (left to right) due to increased nuclear charge.</li><br>
+                  <li>Increases down a group as more electron shells are added. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Alkali and Alkaline Earth Metals</p>
+    </div>
+    <div class="card-back">
+         <img src="images/Almetal.png">
+      <ul >
+        <li><h4>Alkali Metals (Group 1): </h4>Highly reactive, soft metals, one valence electron, e.g., sodium.</li><br>
+        <li><h4>Alkaline Earth Metals (Group 2): </h4>Less reactive than alkali metals, two valence electrons, e.g., magnesium.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Halogens and Noble Gases</p>
+    </div>
+    <div class="card-back">
+        <img src="images/halogen.png">
+      <ul >
+        <li><h4>Halogens (Group 17): </h4>Very reactive, used in disinfection and lighting, e.g., chlorine.</li><br>
+        <li><h4>Noble Gases (Group 18): </h4>Inert, stable gases due to full valence shells, e.g., neon.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Lanthanides and Actinides</p>
+    </div>
+    <div class="card-back">
+        <img src="images/lanthanide.jpg">
+      <ul >
+        <li>Lanthanides and actinides are f-block elements found below the main table. Lanthanides are used in electronics, while actinides, like uranium, are often radioactive.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Electronegativity</p>
+        </div>
+        <div class="card-back">
+          <img src="images/electronegativity.png">
+          <ul >
+            <li>Electronegativity is an atom’s ability to attract electrons in a bond. It increases across a period and decreases down a group.</li>
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/hePb00CqvP0?si=rChHdwTGVzUK8vZM')" class="youtube-button">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+  </div>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

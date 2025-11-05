@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Definition </p>
+          </div>
+          <div class="card-back">
+              <img src="images/DNA.webp">
+              <ul>
+                <li>Genetics is the branch of biology that studies heredity and variation in organisms. It focuses on how traits are passed from one generation to the next and how these traits are expressed in living beings. The field of genetics has a broad range of applications, from understanding human diseases to agricultural improvements.</li>
+              </ul>
+              <div class="button-container">
+                <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/mcEV3m9SG9M?si=cgDTS04L4SV6pfAx')" class="youtube-button">
+              </div>
+          </div>
+        </div>
+        </div>
+
+
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Key Concepts in Genetics</p>
+    </div>
+    <div class="card-back">
+        <ul>
+            <li><strong>Genes:</strong> Genes are segments of DNA located on chromosomes and act as instructions to make proteins. Genes are the basic unit of heredity.</li><br>
+           <li><strong>Chromosomes:</strong> These are long, thread-like structures composed of DNA and proteins. Humans have 46 chromosomes (23 pairs), with one set inherited from each parent.</li><br>
+            <li><strong>DNA (Deoxyribonucleic Acid):</strong> DNA is the molecule that contains the genetic code for all living organisms. It consists of two strands forming a double helix, with sequences of four nucleotides (adenine, cytosine, guanine, and thymine) that encode genetic information.</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Important Genetic Terms</p>
+    </div>
+    <div class="card-back">
+        <img src="images/important genetics.jpg">
+        <ul>
+        <li><strong>Genotype:</strong> The genotype is the genetic makeup of an organism, representing the combination of alleles inherited from both parents.</li><br>
+       <li><strong>Phenotype:</strong> The phenotype is the observable characteristics of an organism resulting from the interaction between its genotype and the environment.</li><br>
+        <li><strong>Mutation:</strong> A mutation is a change in the DNA sequence that can create new traits. Mutations can be beneficial, neutral, or harmful.</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Patterns of Inheritance</p>
+    </div>
+    <div class="card-back">
+        <img src="images/patterns2.jpg">
+        <ul>
+        <li><strong>Dominant and Recessive Traits:</strong> In many traits, one allele may be dominant over another (recessive), meaning the dominant allele's trait will be expressed if present.</li><br>
+        <li><strong>Codominance and Incomplete Dominance:</strong> In codominance, both alleles are fully expressed, as in the case of AB blood type. In incomplete dominance, the phenotype is a blend of both alleles.</li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/37EVkLpJbk8?si=amm4tif4zDen7jmC')" class="youtube-button">
+        </div>
+    </div>
+  </div>
+</div>
+     </div>
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

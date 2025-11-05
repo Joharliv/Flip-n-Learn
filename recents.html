@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="recents.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                    <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Recents</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- Profile icon -->
+                </label>
+                <h4>Profile</h4>
+            </div>    
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+        
+        </header>
+
+        <section id="recents-container"></section>
+    
+    <script src="dashboard.js"></script>
+    <script src="recents.js"></script>
+</body>
+</html>

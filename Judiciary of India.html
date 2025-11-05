@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                        <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Judiciary of India</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Judiciary of India.png">
+                  <ul type="none">
+                  <li>
+                    The Judiciary of India is an independent branch of government that interprets and upholds the Constitution, ensuring justice and protecting citizens' rights.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/_WeoSgJZhXI?si=zrTr-4snWkCxrums')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Supreme Court of India</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Supreme Court.png">
+        <ul>
+            <li>
+                <h4>Establishment:</h4> Established in 1950 as the highest court under India’s Constitution.
+            </li> <br>
+            <li> 
+                <h4>Composition:</h4> Consists of the Chief Justice of India (CJI) and up to 33 other judges.
+            </li> <br>
+            <li>
+                <h4>Significance:</h4> Its decisions are binding on all lower courts, and it serves as the ultimate interpreter of the Constitution.
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>High Courts</p>
+        </div>
+        <div class="card-back">
+        <ul>
+            <li>
+                <h4>Jurisdiction:</h4> Have original jurisdiction in certain cases (e.g., election disputes, writ petitions) and appellate jurisdiction over civil and criminal cases from subordinate courts.
+            <li> <br>
+                <h4>Composition:</h4>  Each High Court is headed by a Chief Justice, with additional judges as required.
+            </li> <br>
+            <li>
+                <h4>Significance:</h4> Protects the rights of citizens at the state level and ensures the application of the law within the state.
+            </li>    
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Subordinate Courts</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Subordinate Court.png">
+            <ul>
+                <li>
+                    <h4>Levels:</h4> Includes District Courts, Magistrate Courts, and other courts handling specific matters.
+                </li><br>
+                <li>
+                    <h4>Jurisdiction:</h4> District Courts have jurisdiction over civil and criminal cases in each district, with cases divided based on seriousness.
+                </li><br>
+                
+                <li>
+                    <h4>Significance:</h4> Forms the base of the judiciary, handling the bulk of cases and directly impacting citizens’ day-to-day legal matters.
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Independence of Judiciary</p>
+          </div>
+          <div class="card-back">
+          <ul>
+              <li>
+                  <h4>Principle:</h4> The judiciary operates independently from the executive and legislative branches.
+              </li> <br>
+              <li>
+                  <h4>Safeguards: </h4> Judges are appointed through a specific process, have security of tenure, and are protected from arbitrary removal to maintain impartiality.
+              </li>
+              <li> <br>
+                  <h4>Importance:</h4> Ensures fair and unbiased rulings, and allows the judiciary to act as a protector of citizens' rights and an interpreter of the Constitution.
+                  
+              </li>    
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/77CojGNo7_E?si=T6NQp4u_xB-SNbv0')" class="youtube-button">
+          </div>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

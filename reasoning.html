@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li> 
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span>Create New</span></a>
+                </li>
+                <li>
+                  <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Basic Set Theory</p>
+          </div>
+          <div class="card-back">
+            <ul >
+               <li><h4>Ques: Define a set, and explain subsets and universal sets.</h4></li> <br>
+              <li><h5>Set:</h5> A collection of distinct objects, often represented as A={1,2,3}.</li><br>
+              <li><h5>Subset:</h5> A set B is a subset of A if every element of B is in A (denoted B⊆A).</li><br>
+              <li><h5>Universal Set (U):</h5> Contains all elements under consideration, with subsets derived from it. Example: If U={1,2,3,4}, then A={1,2}⊆U.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Logical Statements</p>
+    </div>
+    <div class="card-back">
+      <ul >
+        <h5>A logical statement is a sentence that can be either true or false.</h5>
+        <br>
+        <li>Truth Value: Indicates whether the statement is true (T) or false (F).</li>
+        <br>
+        <h6>Examples:</h6>
+        <li>"The sky is blue" (T)</li>
+        <li>"2 + 2 = 5" (F)</li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/Vh9WarRDHfE?si=oQIDQLvLcNWG83U8')" class="youtube-button">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Types of Logical Connectives</p>
+    </div>
+    <div class="card-back">
+        <img src="images/logical-connectives.png">
+      <ul >
+        <li>NOT (¬): Reverses the truth value of a statement.</li>
+        <li>AND (∧): True if both statements are true.</li>
+        <li>OR (∨): True if at least one statement is true.</li>
+        <li>IMPLIES (→): True unless a true statement implies a false one.</li>
+        <li>IF AND ONLY IF (↔): True if both statements are either true or false.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Truth Tables</p>
+    </div>
+    <div class="card-back">
+        <img src="images/truthtable.gif">
+      <ul>
+        <li>A truth table lists all possible truth values for a compound expression.</li>
+        <li>Example for  p∧q:</li>
+      </ul>
+      <div class="button-container">
+        <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/zCvWtcUEWWs?si=iZEYCMOL3-7Bm3uO')" class="youtube-button">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Logical Equivalence</p>
+      </div>
+      <div class="card-back">
+          <img src="images/logical-equivalence.jpg">
+        <ul >
+          <li>Two statements are logically equivalent if they always have the same truth values.</li>
+          <li>Example: p→q is logically equivalent to its contrapositive  ¬q→¬p.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  </div>
+
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+  </div>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

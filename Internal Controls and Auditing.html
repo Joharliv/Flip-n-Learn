@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Internal Controls</p>
+              </div>
+              <div class="card-back">
+              <img src="images/Internal Control.png">
+                  <ul>
+                  <li>
+                  Internal controls are processes and procedures designed to safeguard assets, ensure accurate financial reporting, and promote operational efficiency. They help prevent fraud and errors within an organization.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/750q-ADn8Bg?si=bSlQyVyf92MQBrbK')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Audit</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Audit.png">
+        <ul>
+            <li>
+              An audit is an official examination of an organization’s financial records, systems, and operations, usually conducted by an independent party, to ensure accuracy, compliance, and integrity in financial reporting. 
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Internal Audit</p>
+            </div>
+            <div class="card-back">
+              <img src="images/internal_audit.jpg">
+            <ul>
+                <li>
+                  An internal audit is an independent review conducted by an organization's own staff to assess the effectiveness of internal controls, compliance with laws and policies, and operational efficiency.
+                </li>    
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>External Audit</p>
+            </div>
+            <div class="card-back">
+              <img src="images/External-audit.jpeg">
+                <ul>
+                    <li>
+                      An external audit is an examination of a company's financial statements and records by an independent auditor, typically required for public companies, to provide assurance on the accuracy and fairness of financial reporting.
+                    </li>
+                </ul>
+                <div class="button-container">
+                  <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/nx8LoMfNVq8?si=KcKV4-5WEuPJ-s7H')" class="youtube-button">
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Risk Assessment</p>
+              </div>
+              <div class="card-back">
+              <img src="images/Risk Assessment.png">
+                <ul>
+                  <li>
+                  Risk assessment is the process of identifying, analyzing, and managing potential risks that could impact the achievement of an organization's objectives, allowing for proper control measures to be put in place.
+                  </li>    
+              </ul>
+              </div>
+            </div>
+          </div>
+    
+             </div>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+        
+        </section>
+          
+        
+        <script src="geometry.js" ></script>
+        <script src="dashboard.js"></script>
+        </body>
+        </html>

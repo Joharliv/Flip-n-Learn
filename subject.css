@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 290px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #00093e ;
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 2rem;
+    color: #fff;
+    transition: width 300ms;
+}
+
+.sidebar-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+.sidebar-menu{
+    margin-top: 1rem;
+}
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu a:hover {
+    background: #f1f5f9;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: #00093e ;
+    border-radius: 30px 0px 0px 30px;
+    transition: .2s;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+
+header{
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 290px;
+    width: calc(100% - 290px);
+    top:0;
+    z-index: 100;
+    transition: left 300ms ;
+}
+header h2{
+    color: #222;
+    font-size: 25px;
+}
+#nav-toggle:checked + .sidebar{
+    width:70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand span{
+    display: none;
+}
+#nav-toggle:checked + .sidebar .sidebar-menu span{
+    display: none;
+}
+#nav-toggle:checked ~ .main-content .subject-section{
+    margin-left: 70px;
+}
+#nav-toggle:checked ~ .main-content header{
+    width : calc(100% - 70px);
+    left:70px;
+}
+#nav-toggle:checked ~ .main-content .image {
+    width: 400px; 
+    height: 400px; 
+    margin-top: -50px; 
+    margin-left:70px;
+}
+
+.search-wrapper{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height:50px;
+    width: 500px;
+    display:flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper i{
+    display: inline-block;
+    padding: 0rem 2rem;
+    font-size: 20px;
+    color:#00093e
+}
+.search-wrapper input{
+    height: 100%;
+    width: 800px;
+    padding:.5rem;
+    border:none;
+    outline:none;
+}
+.user-wrapper {
+    display: flex;
+    align-items: center;
+}
+.avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 100%;
+    display: inline-flex; /* Use inline-flex to center the content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    margin-right: 1rem;
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.avatar-placeholder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the image circular */
+    display: none; /* Hide the image by default */
+}
+
+.avatar-placeholder i {
+    font-size: 20px; /* Adjust icon size as needed */
+    color: #000; /* Change icon color for visibility */
+    display: block; /* Display icon as block for centering */
+}
+.user-wrapper h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.subject-section {
+    margin-top: 50px;
+    padding: 20px;
+    margin-left:300px;
+    transition: .8s ;
+}
+
+.subject-section .image {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 20px;
+    transform: translate(700px ,-400px); 
+    transition: height 1s , width 1s;
+}
+.animate__animated .animate__lightSpeedInRight{
+    animation-duration: 1sec;
+}
+.subject-section h1 {
+    font-size: 2rem;
+    color: #00093e;
+    margin-bottom: 20px;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+.topic {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.topic:hover {
+    transform: scale(1.05);
+}
+
+.topic a {
+    color: #00093e;
+    transition: font-size 0.3s;
+}
+
+.topic a:hover {
+    color: #4ca3fa;
+    font-size: 28px;
+}
+
+.topic h3 {
+    font-size: 24px;
+    color: #00093e;
+}
+
+.topic p {
+    font-size: 1rem;
+    color: #555;
+}
+.animate__animated.animate__lightSpeedInRight {
+    animation-duration: 1s;
+}
+
+
+
+.like-button {
+    position: absolute;
+    right: 20px;
+    top: 40px; /* Moves the heart slightly upward */
+    cursor: pointer;
+}
+
+.like-button input {
+    display: none; /* Hides the checkbox completely */
+}
+
+/* Style the heart icon */
+.like-button .heart {
+    width: 24px;
+    cursor: pointer;
+    fill: #186abb;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-origin: top;
+}
+
+/* Hover effect */
+.like-button:hover .heart {
+    fill: #ff6cae;
+}
+
+/* Change color and animation on click */
+.like-button input:checked + .heart {
+    fill: #ff006a;
+    animation: heart-bounce 0.3s forwards;
+}
+
+.like-button input:checked + .heart::after {
+    animation: heart-expand 0.3s forwards;
+}
+
+/* Expanding effect around the heart */
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff006a;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+/* Animation keyframes */
+@keyframes heart-bounce {
+    50% {
+        transform: scaleY(0.6);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes heart-expand {
+    from {
+        transform: scale(0);
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}

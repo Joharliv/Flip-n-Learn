@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <img src="flashcard1.jpeg" width="40px" height="40px" alt="Flashcard">
+                <a href="#" id="profile-link"></a><h4>Profile</h4>
+            </div>
+        </header>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Overview</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/quantum.webp">
+                  <ul>
+                    <li>Quantum Mechanics (QM) is the branch of physics that deals with the behavior of matter and energy at the smallest scales—specifically at the atomic and subatomic levels. Unlike classical mechanics, which explains the macroscopic world, quantum mechanics addresses the unique rules governing particles like electrons, photons, and atoms.</li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/p9pPjASnnxw?si=IdfnpiNLMS3-2r3G')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Key concepts in Quantum Mechanics</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li><strong>Wave-Particle Duality:</strong>Particles such as electrons and photons exhibit both wave-like and particle-like properties. This dual nature is central to quantum mechanics.</li><br>
+                <li><strong>Quantization of Energy:</strong>Energy levels in certain systems are quantized, meaning particles can only have specific discrete energy values.</li><br>
+               <li><strong>Uncertainty Principle:</strong>Proposed by Werner Heisenberg, this principle states that one cannot simultaneously know both the position and momentum of a particle with arbitrary precision.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Key Equations in Quantum Mechanics</p>
+        </div>
+        <div class="card-back">
+            <img src="images/equations.jpg">
+            <ul>
+                <li><strong>Schrödinger Equation:</strong>This is the fundamental equation of quantum mechanics that describes how the wavefunction of a system evolves over time:iℏ ∂t ∂ψ​= H ^ ψ</li><br>
+                <li><strong>Planck’s Relation:</strong>Energy E of a photon is related to its frequency  f by:E=hf</li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/gmb0w9VYPqo?si=4_eqHNkiqZ2-rsjC')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Applications of Quantum Mechanics</p>
+        </div>
+        <div class="card-back">
+         
+            <ul>
+                <li><strong>Electronics and Semiconductors:</strong>Quantum mechanics explains the behavior of electrons in atoms, which is crucial for designing semiconductors and transistors, the building blocks of modern electronics.</li><br>
+                <li><strong>Quantum Computing:</strong>By using principles such as superposition and entanglement, quantum computing offers the potential for solving complex problems much faster than classical computers.</li><br>
+                <li><strong>Medical Imaging:</strong>Techniques like MRI rely on principles from quantum mechanics to image the human body.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

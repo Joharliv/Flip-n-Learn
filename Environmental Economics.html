@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Environmental Economics</p>
+              </div>
+              <div class="card-back">
+                <img src="images/Environmental Economics.png">
+                  <ul>
+                  <li>
+                   Environmental Economics is a branch of economics focused on how economic activities affect the environment and how policies can address issues such as pollution, resource depletion, and climate change.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/q1Vav1n8KoU?feature=shared')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Tragedy of the Commons</p>
+        </div>
+        <div class="card-back">
+          <img src="images/deforestation.jpg">
+        <ul>
+            <li>
+                The Tragedy of the Commons describes a situation where individuals, acting in their own interest, deplete shared resources, resulting in resource degradation for everyone.</li> <br>  
+            <li>Examples include overfishing and deforestation. </li>
+              </ul>
+              <div class="button-container">
+                <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/JuP-virEK0g?feature=shared')" class="youtube-button">
+              </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Carbon Pricing</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Carbon Pricing.png">
+        <ul>
+            <li>
+                Carbon Pricing is an approach to reduce greenhouse gas emissions by assigning a cost to carbon emissions, either through a carbon tax or a cap-and-trade system, encouraging companies to reduce their carbon footprint.
+            </li>    
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/bxs6ZrxLvHg?feature=shared')" class="youtube-button">
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Cap-and-Trade System</p>
+        </div>
+        <div class="card-back">
+          <img src="images/cap-trade.jpg">
+            <ul>
+                <li>
+                    A Cap-and-Trade System sets a limit on total emissions and allows companies to buy and sell emission permits. This creates a financial incentive to reduce emissions as firms with lower emissions can sell their unused permits.
+                </li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/pA6FSy6EKrM?feature=shared')" class="youtube-button" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Pigouvian Tax</p>
+          </div>
+          <div class="card-back">
+            <img src="images/Pigouvian-Tax.png">
+          <ul>
+              <li>
+                A Pigouvian Tax is a tax imposed on activities that create negative externalities, such as pollution, to reflect the social cost of the activity and incentivize reducing the harmful effects.   
+              </li>    
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/GzMcvmNE3z8?feature=shared')" class="youtube-button">
+          </div>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

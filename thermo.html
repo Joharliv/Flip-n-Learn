@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>What is Thermodynamics?</p>
+          </div>
+          <div class="card-back">
+            <img src="images/thermo.png">
+            <ul >
+              <li>Thermodynamics is the study of energy changes, especially heat and work, during chemical and physical processes. It helps explain how energy flows and transforms.</li>
+         
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/jRu3Hct8Pfc?si=nyePkVMi_KE5OmGc')" class="youtube-button">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>System and Surroundings</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/system.png">
+                <ul >
+                  <li><h4>System:</h4>The part of the universe under study (e.g., a reaction in a beaker).</li><br>
+                  <li><h4>Surroundings:</h4>Everything outside the system that can exchange energy with it. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Types of Systems</p>
+    </div>
+    <div class="card-back">
+         <img src="images/types-system.jpg">
+      <ul >
+        <li><h4>Open System: </h4>Exchanges both matter and energy with surroundings.</li><br>
+        <li><h4>Closed System: </h4>Exchanges only energy, not matter.</li><br>
+        <li><h4>Isolated System:</h4>Does not exchange matter or energy.</li><br>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>First Law of Thermodynamics</p>
+    </div>
+    <div class="card-back">
+        <img src="images/FLOT.png">
+      <ul >
+        <li>FLOT states that Energy cannot be created or destroyed; it can only change forms. </li><br>
+        <li>Mathematically, ΔU = q + w, where ΔU is the change in internal energy, q is heat, and w is work. </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Second Law of Thermodynamics</p>
+      </div>
+      <div class="card-back">
+        <img src="images/SLOT.png">
+        <ul >
+          <li>The Second Law states that entropy (disorder) of an isolated system always increases over time. For spontaneous processes, total entropy of the system and surroundings increases.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Standard Enthalpy of Formation</p>
+      </div>
+      <div class="card-back">
+        <img src="images/enthalpy.png">
+        <ul >
+          <li>The enthalpy change when 1 mole of a compound forms from its elements in their standard states. Denoted as ΔHf°, it's a benchmark for calculating reaction enthalpies. </li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/CGG4qlOMFr8?si=BXHBKBSz6WzMLQKd')" class="youtube-button">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Gibbs Free Energy (G)</p>
+      </div>
+      <div class="card-back">
+        <img src="images/Gibbs-energy.jpg">
+        <ul >
+          <li>Gibbs free energy (G) is a thermodynamic potential that predicts reaction spontaneity at constant temperature and pressure. ΔG = ΔH - TΔS. If ΔG &lt; 0, the process is spontaneous.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+  </div>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

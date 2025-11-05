@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>International Economics</p>
+              </div>
+              <div class="card-back">
+                <img src="images/International Economics.png">
+                  <ul>
+                  <li>
+                    International Economics studies the flow of goods, services, and capital across countries, focusing on trade policies, exchange rates, and the impact of globalization on national economies.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/tFmsz4yVsC0?si=bLdwq0KgFWQnMURZ')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Tariffs</p>
+        </div>
+        <div class="card-back">
+          <img src="images/tarrif.webp">
+        <ul>
+            <li>
+                Tariffs are taxes imposed on imported goods, making them more expensive. Tariffs aim to protect domestic industries from foreign competition but can lead to higher prices for consumers.
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Exchange Rates</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Exchange Rates.png">
+        <ul>
+            <li>
+                Exchange Rates are the prices at which one currency can be exchanged for another. They fluctuate based on factors like interest rates, inflation, and economic stability, affecting international trade and investment. 
+            </li>    
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>World Trade Organization</p>
+        </div>
+        <div class="card-back">
+        <img src="images/WTO.png">
+            <ul>
+                <li>
+                    The WTO regulates international trade by creating rules, resolving disputes, and promoting fair trade practices. Its goal is to encourage free trade while considering the needs of developing countries.   
+                </li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/SpvjFW7BSFU?si=hYTRntGvB25XQP7m')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Balance of Payments</p>
+          </div>
+          <div class="card-back">
+            <img src="images/Balance-of-Payment.png">
+            <ul>
+              <li>
+                The Balance of Payments is a record of all economic transactions between a country and the rest of the world, including trade, investment, and financial transfers. It consists of the current account, capital account, and financial account.
+              </li>    
+          </ul>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.html"></script>
+    </body>
+    </html>

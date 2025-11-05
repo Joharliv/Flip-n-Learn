@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Role and Powers of the Executive</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Powers of Executive.png">
+                  <ul>
+                  <li>
+                    The Executive is the branch of government responsible for implementing and enforcing laws.In India, the Executive comprises the President, the Prime Minister, the Council of Ministers, and at the state level, the Governor and Chief Minister.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/4y466sm2uVY?si=PQ5HK8iqe7D7wDJt')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>President of India: Role and Powers</p>
+        </div>
+        <div class="card-back">
+        <img src="images/President Images.png">
+        <ul>
+            <li>
+                <h4>Role</h4> The President is the ceremonial head of state and supreme commander of the armed forces.
+            </li> <br>
+            <li> 
+                <h4>Powers: </h4>Includes executive, legislative, judicial, and emergency powers, such as issuing ordinances, vetoing bills, and declaring national emergencies.
+
+            </li> <br>
+            <li>
+                <h4>Limitations:</h4>Must act on the advice of the Council of Ministers, except in certain special circumstances.
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Prime Minister: Role and Functions</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Prime Minister Image.png">
+        <ul>
+            <li>
+                <h4>Role: </h4> The Prime Minister is the head of the government and chief advisor to the President.
+            </li><br>
+            <li>
+                <h4>Functions:</h4> Leads the executive branch, chairs Cabinet meetings, represents India domestically and internationally, and oversees the administration. 
+            </li><br>
+            <li>
+                <h4>Significance:</h4>  As the head of the Council of Ministers, the PM plays a central role in policy-making and implementation.
+            </li>    
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Chief Minister and State Council of Ministers</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li>
+                    <h4>Chief Minister’s Role</h4> The Chief Minister (CM) is the head of the state government and leads the state’s executive branch.
+                </li><br>
+                <li>
+                    <h4>Powers: </h4>  Includes overseeing state administration, implementing state laws, and advising the Governor.
+                </li><br>
+                <li>
+                    <h4>State Council of Ministers: </h4> The CM is supported by the Council of Ministers, who manage various state departments and ensure policies are implemented at the local level.
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Emergency Powers of the Executive</p>
+          </div>
+          <div class="card-back">
+          <ul>
+              <li>
+                <h4>Types of Emergencies:</h4> The President can declare a National Emergency, President’s Rule, or Financial Emergency. <br>
+              <ul>
+                <li><h4>National Emergency:</h4> For war, external aggression, or armed rebellion.</li> 
+                <li><h4>President's Rule:</h4> Imposed in a state if its governance breaks down.</li> 
+                <li><h4>Financial Emergency:</h4> To stabilize financial conditions.</li>
+              </ul>
+            </li><br>
+              <li>
+                  <h4>Significance:</h4> These powers allow the Executive to take direct control in extreme situations, ensuring the country’s stability and security.
+              </li>    
+          </ul>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

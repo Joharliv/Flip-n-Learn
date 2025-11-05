@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Basic Probability Definition</p>
+          </div>
+          <div class="card-back">
+            <img src="images/probability.jpg">
+            <ul >
+              <li>Probability of an event E is given by:</li>
+              <li>No. of favourable outcomes/ Total no. of outcomes</li>
+              <li>Range:  0≤P(E)≤1</li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/YIzGUSNp3NI?si=bmhx2F6cyKVFLqQL')" class="youtube-button">
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Types of Events</p>
+    </div>
+    <div class="card-back">
+      <ul >
+        <li><h4>Simple Event:</h4> One outcome, e.g., rolling a die shows a 3.</li><br>
+        <li><h4>Compound Event:</h4> More than one outcome, e.g., rolling a sum of 7.</li><br>
+        <li><h4>Mutually Exclusive Events:</h4> Cannot occur simultaneously, e.g., flipping heads or tails.</li><br>
+        <li><h4>Non-Mutually Exclusive Events:</h4> Can occur together, e.g., drawing a red card from a deck.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Addition Rule</p>
+    </div>
+    <div class="card-back">
+        <img src="images/Mutually_exclusive.jpeg">
+      <ul >
+        <li><h4>Mutually Exclusive:</h4>P(A ∪ B) = P(A) + P(B)</li><br>
+        <li><h4>Non-Mutually Exclusive:</h4>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Multiplication Rule</p>
+    </div>
+    <div class="card-back">
+        <img src="images/independent-event.jpg">
+      <ul >
+        <li><h4>Independent Events:</h4>P(A ∩ B) = P(A) . P(B)</li><br>
+        <li><h4>Dependent Events:</h4>P(A ∩ B) = P(A) . P(B|A)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Conditional Probability</p>
+      </div>
+      <div class="card-back">
+          <img src="images/conditional_probability.jpg">
+        <ul >
+          <li> P(A|B) = P(A ∩ B)/P(B)</li><br>
+          <li>It measures the probability of event  A occurring under the condition that  B has occurred.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Bayes' Theorem</p>
+        </div>
+        <div class="card-back">
+            <img src="images/bayes.jpg">
+          <ul >
+            <li>P(A|B) = P(A ∩ B).P(A)/P(B)</li><br>
+            <li>Bayes' Theorem calculates the probability of an event based on prior knowledge and new evidence.</li>
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/WOYylyjkq_g?si=r4lvPAGJkTnjplra')" class="youtube-button">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+  </div>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

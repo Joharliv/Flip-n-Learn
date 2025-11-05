@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>What is a coordination compound?</p>
+          </div>
+          <div class="card-back">
+            <img src="images/coordinate compound.jpg">
+            <ul >
+              <li>A coordination compound consists of a central metal atom or ion surrounded by a set of ligands that are bonded to it.</li>
+         
+            </ul>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>What are ligands?</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/ligand.jpg">
+                <ul >
+                  <li>Ligands are ions or molecules that donate a pair of electrons to the central metal atom/ion to form a coordination bond.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Types of Ligands</p>
+    </div>
+    <div class="card-back">
+      <ul >
+        <li><h4>Monodentate Ligand: </h4>Form only one bond with a metal ion, having a single donor atom.</li><br>
+        <li><h4>Bidentate Ligand: </h4>Have two donor atoms capable of forming two bonds with a metal ion.</li><br>
+        <li><h4>Polydentate Ligand:</h4>Occupy many sites of the same metal ion.</li><br>
+        <li><h4>Ambidentate Ligand:</h4>Can bond through different atoms.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>What is a coordination number?</p>
+    </div>
+    <div class="card-back">
+        <img src="images/Coordination-Number.jpg">
+      <ul >
+        <li>The coordination number is the number of ligand atoms that are directly bonded to the central metal atom/ion in a coordination compound.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>Crystal Field Theory</p>
+      </div>
+      <div class="card-back">
+        <img src="images/crystal-field-theory.png">
+        <ul >
+          <li>Crystal field theory explains the splitting of d-orbital energies of metal ions in coordination compounds due to the presence of ligands.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>What is a complex ion?</p>
+      </div>
+      <div class="card-back">
+        <img src="images/complex-ion.jpg">
+        <ul >
+          <li>A complex ion is a charged species consisting of a central metal atom/ion bonded to one or more ligands. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+  </div>
+
+</section>
+  
+
+<script src="geometry.js" ></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

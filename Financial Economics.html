@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Financial Economics</p>
+              </div>
+              <div class="card-back">
+                <img src="images/Financial Economics.png">
+                  <ul>
+                  <li>
+                    Financial Economics studies how resources are allocated in markets over time, focusing on the pricing of assets, the role of financial institutions, and the impact of risk and uncertainty on financial decisions.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/eJVZ_BnDPTk?feature=shared')" class="youtube-button">
+                  </div> 
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Risk and Return</p>
+        </div>
+        <div class="card-back">
+          <img src="images/risk-return.jpg">
+        <ul>
+            <li>
+                Risk refers to the potential variability in returns from an investment. Return is the profit made from an investment. Generally, higher risk is associated with the potential for higher returns and vice versa.
+            </li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/4KGvoy_Ke9Y?feature=shared')" class="youtube-button">
+        </div> 
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Present Value</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Present Value.png">
+        <ul>
+            <li>
+                Present Value is the current worth of a future sum of money, discounted at a specific interest rate. It helps determine the value today of cash flows expected in the future.  
+            </li>    
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/tTp8OIxkpjY?feature=shared')" class="youtube-button">
+        </div> 
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Efficient Market Hypothesis</p>
+        </div>
+        <div class="card-back">
+          <img src="images/Efficient-market-hypothesis.png">
+            <ul>
+                <li>
+                    The Efficient Market Hypothesis suggests that all known information is already reflected in asset prices, implying it is impossible to consistently achieve higher-than-average returns through stock-picking or market timing.
+                </li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/UTHvfI9awBk?feature=shared')" class="youtube-button">
+            </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Capital Asset Pricing Model</p>
+          </div>
+          <div class="card-back">
+          <img src="images/CAPM.png">
+          <ul>
+              <li>
+                CAPM is a model used to determine the expected return on an investment based on its risk, as measured by beta, and the expected market return. It helps investors assess if an asset offers a reasonable return given its risk level.
+              </li>    
+          </ul>
+          <div class="button-container">
+            <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/MVfJ5H9pqGY?feature=shared')" class="youtube-button">
+          </div> 
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

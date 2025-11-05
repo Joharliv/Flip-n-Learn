@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Political Parties</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Political_Parties.png">
+                  <ul>
+                    <li> A political party basically, is a group of people. These people come together to contest elections in order to hold power in the government. It is a way to mobilize voters to support common sets of interests, concerns, and goals. </li>
+                  </ul>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Functions of a Political Party</p>
+        </div>
+        <div class="card-back">
+     
+        <ul>
+            <li>
+                Parties contest elections and after wining they run governments.
+            </li><br>
+            <li>
+                Parties put forward different policies and programmes and the voters choose from them. A party reduces a vast number of opinions into a few basic positions which it supports.<br>
+            </li><br>
+            <li>
+                Parties play a decisive role in making laws for a country.<br>
+            </li><br>
+            <li>
+                Those parties that lose in the elections play the role of opposition to the parties in power.<br>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Election Commission</p>
+        </div>
+        <div class="card-back">
+          <img src="images/State_Parties.png">
+          <ul>
+            <li>
+                Every party in India has to register with the Election Commission. 
+            </li><br>
+            <li>
+                 The Commission treats every party as equal to the others, but it offers special facilities to large and established parties.
+            </li><br>
+            <li>   
+                 They are given a unique symbol and are called, “recognised political parties.
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>National Parties & State Parties</p>
+          </div>
+          <div class="card-back">
+          <img src="images/National_Parties.png">
+          <ul>
+              <li>
+                <h4>National Party:</h4>
+                A party that secures at least six percent of the total votes in Lok Sabha elections or Assembly elections in four States and wins at least four seats in the Lok Sabha is recognised as a national party.
+              </li><br>
+              <li>
+                <h4>State Party:</h4>     
+                A party that secures at least six percent of the total votes in an election to the Legislative Assembly of a State and wins at least two seats is recognised as a State party.
+              </li><br>
+            </ul>
+              </div>
+        </div>
+      </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Importance of Political Parties</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>
+                A democracy cannot exist without the presence of a political party.
+            </li><br>
+            <li>       
+                Every candidate in the election would be an independent candidate. Any individual candidate does not have the efficiency to promise any major policy change to the people.
+            
+            </li><br>
+            <li>
+                In the long run, only a representative democracy can survive. Political parties are the agencies that gather different views on various issues and present them to the government.
+            </li>
+          </ul>
+      </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

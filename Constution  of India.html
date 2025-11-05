@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p> Indian Constituiton</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Constitution_Image-2.png">
+                  <ul>
+                    <li> India’s Constitution is the supreme law of India. It defines the Government’s fundamental political values, policies, processes, powers, rights, and duties.<br> It conveys constitutional supremacy given by constituent assembly and adopted by its citizens, with a declaration in its preamble.</li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/sDstf8ockUo?feature=shared')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Adoption</p>
+        </div>
+        <div class="card-back">
+            <img src="images/Constitution_Image-3.png">
+           <ul>
+            <li> The Constituent Assembly adopted the Constitution on November 26, 1949, and it became effective on January 26, 1950. </li><br>
+           <li> Dr. B.R. Ambedkar led the drafting committee. </li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Fundamental Rights</p>
+        </div>
+        
+        <div class="card-back">
+          <img src="images/Constitution_Image-1.png">
+         <ul>
+          <li>   The Constitution of India provides its citizens with six fundamental rights. These rights are the Right to Freedom, Right to Equality, Cultural and Educational Rights, Right to Constitutional Remedies, Right against Exploitation, Right against Exploitation. Recently, the Right to Privacy has also been added to fundamental rights.</li>
+         </ul>
+         <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/7jG6G-kIzD4?feature=shared')" class="youtube-button">
+        </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Fundamental Duties</p>
+        </div>
+        <div class="card-back">
+            <img src="images/Fundamental-Duties.png">
+            <ul>
+              <li>Respect the Constitution, National Flag, and National Anthem.</li>
+              <li>Cherish and follow ideals of the freedom struggle.</li>
+              <li>Uphold and protect sovereignty, unity, and integrity of India.</li>
+              <li>Defend the country and render national service.</li>
+              <li>Promote harmony and common brotherhood.</li>
+              <li>Safeguard public property and avoid violence.</li>
+              <li>Provide educational opportunities for children.</li>
+            </ul>
+            
+          </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

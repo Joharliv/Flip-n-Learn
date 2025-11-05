@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p> Quit India Movement</p>
+              </div>
+              <div class="card-back">
+            <img src="images/Quit_India_Movement_Image.png">
+              <ul>
+              <li>Quit India Movement was a massiveanti-colonial struggle in India, launched on August 8, 1942, under the leadership ofMahatma Gandhi, who gave the mantra of "Do or Die" during this Movement.
+              </li> <br>
+              <li>
+              Projected initially as the civil disobedience movement, this 'third great wave' of India's struggle for freedom soon took a violent turn with the aim of 'fight to the finish' of the colonial empire.
+              </li>
+               </ul>
+               <div class="button-container">
+                <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/EPXsq0tg3yc?si=zvsfdoo3u2NnfQhK')" class="youtube-button">
+              </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Significance of Quit India Movement</p>
+        </div>
+        <div class="card-back">
+          <img src="images/QUIT_INDIA_IMAGE.png">
+          <ul>
+            <li>
+            Quit India Movement was a massive anti-colonial struggle in India, launched on August 8, 1942, under  the leadership of Mahatma Gandhi, who  gave the mantra of "Do or Die" during this Movement.
+            </li><br>
+            <li>
+            Projected initially as the civil disobedience movement, this 'third great wave' of India's struggle 
+            for freedom soon took a violent turn with the aim of 'fight to the finish' of the colonial empire.  
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Quit India Movement Causes</p>
+        </div>
+        <div class="card-back">
+          <ul>
+        <li>
+            The attitude of the British Government:
+            The Indian people had grown increasingly disillusioned with the British government's failure to fulfil its promises regarding India's self-rule.
+        </li> <br>
+        <li>
+            <u>Growing Nationalism:</u>
+            The Indian people had grown increasingly disillusioned with the British government's failure to fulfil its promises regarding India's self-rule.
+        </li> <br>
+        <li>
+            <u>Socio-Economic factors:</u>
+            India's participation in World War II placed significant economic burdens and restrictions on the country.
+            Thus, this participation led to rising prices, shortages of essential goods, and increased taxation, causing immense hardships for the Indian population.
+     
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Quit India Movement Limitations </p>
+        </div>
+        <div class="card-back">
+            <ul>
+            <li>The movement did not immediately lead to freedom, and it took more years of struggle and negotiations before independence was achieved.</li> <br>
+            <li> The lack of central leadership hindered effective coordination and decision-making, leading to confusion and fragmentation within the movement. </li> <br>
+            <li> Some political parties opposed the Quit India Movement such as Muslim League, Communist Party of India were against the Movement.</li> 
+          </ul>  
+        </div>
+      </div>
+    </div>
+         </div>
+       
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

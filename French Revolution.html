@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                        <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>French Revolution</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/FRENCH REVOLUTION.png">
+                  <ul type="none">
+                  <li>
+                    The French Revolution was a significant social and political upheaval in France from 1789 to 1799 that fundamentally changed French society and influenced global history.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/ik3tXVUbiQE?si=AfLTB1ArI8HF4oM-')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Causes of French Revolution</p>
+        </div>
+        <div class="card-back">
+        <ul>
+            <li>
+                <h4>Social Inequality:</h4> The division of society into three estates (clergy, nobility, commoners) created severe social tensions, as the commoners bore the tax burden.
+            </li> <br>
+            <li>
+                <h4>Economic Hardships:</h4> France faced financial crisis from wars, including support for the American Revolution, and high taxes.
+            </li> <br> 
+            <li>
+                <h4>Enlightenment Ideas:</h4> New ideas about equality, liberty, and democracy spread, inspiring demands for political reform.
+            </li> <br>
+            <li>
+                <h4>Weak Leadership:</h4> King Louis XVI's indecisive and extravagant rule added to the unrest.
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Storming of the Bastille</p>
+        </div>
+        <div class="card-back">
+        <ul>
+            <li>
+                <h4>Event:</h4> Parisians stormed the Bastille prison, a symbol of royal tyranny, searching for weapons and ammunition.
+            </li> <br>
+            <li>
+                <h4>Importance:</h4> This event symbolized the people’s revolt against oppression and marked a significant victory for revolutionaries.
+            <li> <br>
+                <h4>Result:</h4> Bastille Day is now celebrated as France's national day, commemorating the beginning of the Revolution.
+            </li>    
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Reign of Terror (1793-1794)</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li>
+                    <h4>Period:</h4> Led by Maximilien Robespierre and the Committee of Public Safety to protect the Revolution from perceived enemies.
+                </li><br>
+                <li>
+                    <h4>Events:</h4> Thousands of people were executed by guillotine, including King Louis XVI and Queen Marie Antoinette
+                </li><br>
+                <li>
+                    <h4>Outcome:</h4> The extreme measures led to fear and chaos, ultimately ending with Robespierre’s execution, signaling the end of the Reign of Terror.
+                </li>
+            </ul>
+            <div class="button-container">
+                <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/ia1CGhXm6OM?si=AsIoYZins3N5E8uX')" class="youtube-button">
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Rise of Napoleon Bonaparte</p>
+          </div>
+          <div class="card-back">
+         <img src="images/Napoleon Bonaparte.png">
+          <ul>
+              <li>
+                  <h4>Emergence:</h4>  Amidst the chaos following the Revolution, Napoleon, a successful military general, gained popularity.
+              </li> <br>
+              <li>
+                  <h4>1799 Coup:</h4> He staged a coup d'état, overthrowing the government (Directory) and establishing himself as First Consul.
+              <li> <br>
+                  <h4>Significane:</h4>Napoleon ended the Revolution and began a new era in French history, eventually declaring himself Emperor and expanding French influence across Europe.
+              </li>    
+          </ul>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

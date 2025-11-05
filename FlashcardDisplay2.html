@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolving Flashcards</title>
+    <link rel="stylesheet" type="text/css" href="quizlet2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome Link -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+        }
+
+        .flashcard-container {
+            position: relative;
+            min-width: 800px;
+            /* Increased width */
+            height: 500px;
+            /* Increased height */
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 310px;
+            transition: transform 0.5s ease;
+            /* Add smooth transition for rotating effect */
+            transition: transform 0.6s ease;
+            /* Smooth transition for container movement */
+        }
+
+        .flashcard-container.move-left {
+            transform: translateX(-100%);
+            /* Move left */
+        }
+
+        .flashcard-container.move-right {
+            transform: translateX(100%);
+            /* Move right */
+        }
+
+        .flashcard-container:hover {
+            transform: rotateY('10deg')
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease;
+            /* Smooth transition for flipping */
+        }
+
+        .flashcard.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-front {
+            background-color: #00093e;
+            color: white;
+            border: 10px solid #fffba7;
+            border-radius: 10px;
+        }
+
+        .card-back {
+            background-color: #fffba7;
+            color: #000000;
+            border: 10px solid #0f1a57;
+            border-radius: 10px;
+            transform: rotateY(180deg);
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        #prev,
+        #next {
+            width: 50px;
+            /* Adjusted button width */
+            height: 50px;
+            /* Adjusted button height */
+            font-size: 40px;
+            /* Larger font size for icon */
+            border: none;
+            color: #00093e;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all transform 0.3s;
+            /* Add transition for smooth hover effect */
+        }
+
+        #prev:hover,
+        #next:hover {
+            transform: scale(0.94) translateY(-50%);
+        }
+
+        #prev {
+            margin-left: 330px;
+        }
+
+        .nav-buttons button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #prev {
+            margin-left: 330px;
+        }
+
+        .nav-buttons button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .card-back img {
+            max-width: 80%;
+            /* Ensure image fits inside the card */
+            margin: 10px 0;
+        }
+
+        .card-back audio {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i><span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                    <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Create New</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+        </header>
+    </div>
+    <div class="flashcard-container" id="flashcard-container"></div>
+
+    <!-- Previous and Next buttons with arrow icons -->
+    <div class="nav-buttons">
+        <button id="prev" disabled><i class="fa-solid fa-circle-arrow-left button"></i></button> <!-- Left arrow icon -->
+        <button id="next"><i class="fa-solid fa-circle-arrow-right button"></i></button> <!-- Right arrow icon -->
+    </div>
+
+    <script>
+        let currentCardIndex = 0;
+        let flashcardsData = [];
+        let title = "";
+        let description = "";
+
+        async function openDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open("FlashcardDB", 1);
+                request.onerror = event => reject("Database error: " + event.target.error);
+                request.onsuccess = event => resolve(event.target.result);
+            });
+        }
+
+        async function loadFlashcards() {
+            const db = await openDB();
+            const transaction = db.transaction("flashcards", "readonly");
+            const store = transaction.objectStore("flashcards");
+            const request = store.getAll();
+
+            return new Promise((resolve, reject) => {
+                request.onsuccess = event => resolve(event.target.result);
+                request.onerror = event => reject("Error reading flashcards: " + event.target.error);
+            });
+        }
+
+        function createFlashcard(cardData) {
+            const card = document.createElement("div");
+            card.classList.add("flashcard");
+
+            const cardFront = document.createElement("div");
+            cardFront.classList.add("card-face", "card-front");
+            cardFront.innerHTML = `
+                <h1>${title}</h1>
+                <p>${description}</p>
+            `;
+
+            const cardBack = document.createElement("div");
+            cardBack.classList.add("card-face", "card-back");
+            cardBack.innerHTML = `
+                <h3>${cardData.term}</h3>
+                <p>${cardData.definition}</p>
+                ${cardData.images.map(img => `<img src="${img}" alt="Image">`).join("")}
+                ${cardData.audio.map(aud => `<audio controls><source src="${aud}" type="audio/mpeg"></audio>`).join("")}
+            `;
+
+            card.appendChild(cardFront);
+            card.appendChild(cardBack);
+            card.addEventListener("click", () => card.classList.toggle("is-flipped"));
+            return card;
+        }
+
+        function displayFlashcard(index) {
+            const container = document.getElementById("flashcard-container");
+            container.innerHTML = "";
+
+            if (flashcardsData[index]) {
+                const flashcard = createFlashcard(flashcardsData[index]);
+                container.appendChild(flashcard);
+            }
+
+            document.querySelector("#prev").disabled = index === 0;
+            document.querySelector("#next").disabled = index === flashcardsData.length - 1;
+        }
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            const flashcardSets = await loadFlashcards();
+            if (flashcardSets.length > 0) {
+                const latestSet = flashcardSets[flashcardSets.length - 1];
+                title = latestSet.title;
+                description = latestSet.description;
+                flashcardsData = latestSet.flashcards;
+                displayFlashcard(currentCardIndex);
+            } else {
+                alert("No flashcards found.");
+            }
+        });
+
+        document.querySelector("#prev").addEventListener("click", () => {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                displayFlashcard(currentCardIndex);
+            }
+        });
+
+        document.querySelector("#next").addEventListener("click", () => {
+            if (currentCardIndex < flashcardsData.length - 1) {
+                currentCardIndex++;
+                displayFlashcard(currentCardIndex);
+            }
+        });
+        card.addEventListener("click", () => card.classList.toggle("is-flipped"));
+
+        function displayFlashcard(index, direction = "none") {
+            const container = document.getElementById("flashcard-container");
+            container.innerHTML = "";
+
+            if (direction === "left") {
+                container.classList.add("move-left");
+            } else if (direction === "right") {
+                container.classList.add("move-right");
+            }
+
+            setTimeout(() => {
+                container.classList.remove("move-left", "move-right");
+
+                if (flashcardsData[index]) {
+                    const flashcard = createFlashcard(flashcardsData[index]);
+                    container.appendChild(flashcard);
+                }
+
+                document.querySelector("#prev").disabled = index === 0;
+                document.querySelector("#next").disabled = index === flashcardsData.length - 1;
+            }, 500);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            displayFlashcard(currentCardIndex);
+        });
+
+        document.querySelector("#prev").addEventListener("click", () => {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                displayFlashcard(currentCardIndex, "right");
+            }
+        });
+
+        document.querySelector("#next").addEventListener("click", () => {
+            if (currentCardIndex < flashcardsData.length - 1) {
+                currentCardIndex++;
+                displayFlashcard(currentCardIndex, "left");
+            }
+        });
+    </script>
+
+<script src="dashboard.js"></script>
+</body>
+
+</html>

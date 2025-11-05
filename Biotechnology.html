@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <label for="profile-upload" class="avatar-placeholder">
+                    <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                    <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                <h4>Profile</h4>
+            </div>
+        </header>
+    </div>
+
+
+<section class="wrapper">
+  <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+  <div class="card-container">
+    <div class="carousel">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Definition </p>
+          </div>
+          <div class="card-back">
+              <img src="images/biotechnology.jpg">
+              <ul>
+                <li> Biotechnology is the field of science that combines biology with technology to develop products and technologies that harness cellular and biomolecular processes. It often focuses on manipulating organisms or biological substances to produce useful goods or services, from medicine to agriculture.</li>
+              </ul>
+              <div class="button-container">
+                <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/kjUPHIqvDkY?feature=shared')" class="youtube-button">
+              </div>
+          </div>
+        </div>
+        </div>
+
+
+        
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Main Fields in Biotechnology</p>
+    </div>
+    <div class="card-back">
+        <ul>
+            <li><strong>Genetic Engineering: </strong>This involves modifying an organism's DNA to achieve desired traits, such as pest resistance in plants or higher yield in crops. </li><br>
+           <li><strong>Medical Biotechnology: </strong>Focused on healthcare, it includes the development of drugs, vaccines, and diagnostic tools. Examples include gene therapy, recombinant insulin, and monoclonal antibodies.</li><br>
+            <li><strong>Environmental Biotechnology: </strong>This area uses organisms to address environmental issues, such as using bacteria to clean oil spills (bioremediation) or developing biodegradable materials.</li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/MyJbQRs5Ffo?feature=shared')" class="youtube-button">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Key Techniques</p>
+    </div>
+    <div class="card-back">
+        <img src="images/key techniques.jpg">
+        <ul>
+        <li><strong>Gene Cloning:</strong> This is the process of creating copies of a specific gene, which can then be inserted into other organisms. </li><br>
+       <li><strong>CRISPR-Cas9:</strong>A revolutionary gene-editing tool that allows scientists to make precise changes to DNA, with applications in gene therapy, agriculture, and research.</li><br>
+        <li><strong>Fermentation:</strong> This ancient process uses microorganisms to produce products like antibiotics, alcohol, and dairy products. </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p>Applications of Biotechnology</p>
+    </div>
+    <div class="card-back">
+        <img src="images/applications.jpg">
+        <ul>
+        <li>In medicine, biotechnology is used to create vaccines, synthetic hormones, and diagnostics.</li><br>
+        <li>In agriculture, it enables the production of genetically modified crops that are pest-resistant or have higher nutritional value.</li><br>
+        <li>In the environment, it helps in bioremediation and reducing industrial waste.</li>
+        </ul>
+        <div class="button-container">
+          <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/ChZW8eKZcvI?feature=shared')" class="youtube-button">
+        </div>
+    </div>
+  </div>
+</div>
+     </div>
+    </div>
+    <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+
+</section>
+  
+
+<script src="geometry.js" ></script> 
+<script src="dashboard.js"></script>
+</body>
+</html>
+
+
+

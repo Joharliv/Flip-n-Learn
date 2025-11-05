@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Savedflashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <img src="flashcard1.jpeg" width="40px" height="40px" alt="Flashcard">
+                <a href="#" id="profile-link"></a><h4>Profile</h4>
+            </div>
+        </header>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Introduction</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/electromagnetism.jpeg">
+                  <ul>
+                    <li> Electromagnetism is one of the four fundamental forces of nature and is crucial in explaining how charged particles interact through electric and magnetic fields. It provides the basis for understanding how electricity, magnetism, and light are interrelated and has applications across virtually every field of science and engineering.</li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/jHqgDsfEidQ?feature=shared')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Maxwell Equations</p>
+        </div>
+        <div class="card-back">
+            <img src="images/maxwell.jpg">
+            <ul>
+                <li><strong>Gauss’s Law for Electricity: </strong>Relates electric fields to charges.</li><br>
+                <li><strong>Gauss’s Law for Magnetism: </strong> States that there are no magnetic monopoles.</li><br>
+                <li><strong>Faraday’s Law of Induction: </strong>A changing magnetic field induces an electric field.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Electromagnetic Waves</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li><strong>Wave Nature:</strong> Electromagnetic waves are transverse waves consisting of oscillating electric and magnetic fields perpendicular to each other and to the direction of propagation.</li><br>
+                <li><strong>Speed of light:</strong>In a vacuum, all electromagnetic waves travel at the speed of light, c=3×10⁸m/s.</li><br>
+                <li><strong>Spectrum:</strong>Electromagnetic waves encompass a wide range of wavelengths and frequencies, from radio waves (long wavelengths, low frequency) to gamma rays (short wavelengths, high frequency).</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Applications of Electromagnetism</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li><strong>Electric Motors and Generators:</strong>Based on the principles of electromagnetic induction, motors convert electrical energy into mechanical energy, and generators do the reverse.</li><br>
+                <li><strong>Communication Systems:</strong>Radio waves, microwaves, and other parts of the electromagnetic spectrum are used for transmitting data in television, radio, cell phones, and Wi-Fi.</li><br>
+                <li><strong>Medical Imaging:</strong>MRI (Magnetic Resonance Imaging) uses strong magnetic fields to create images of the body’s interior.</li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/pn6kodNFm-4?feature=shared')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

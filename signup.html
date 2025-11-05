@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup Page</title>
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap');
+body {
+background: linear-gradient(154.5deg, #00072f 50%,#ffffff 50%);
+color: #f0f0f0;
+font-family: 'Roboto', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+flex-direction: column;
+}
+
+/* Tagline Style */
+.tagline {
+font-size: 36px;
+margin-bottom: 2px;
+color: #fff;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 2px;
+}
+
+.signup-container {
+background-color: #ffffff;
+padding: 27px;
+border-radius: 12px;
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+max-width: 400px;
+width: 100%;
+}
+
+.signup-container h1 {
+color: #333;
+text-align: center;
+margin-bottom: 30px;
+font-size: 26px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+}
+
+.input-field {
+width: 370px;
+padding: 15px;
+margin: 10px 0px ;
+border-radius: 8px;
+border: 1px solid #ccc;
+font-size: 16px;
+background-color: #f9f9f9;
+transition: all 0.3s ease;
+}
+
+.input-field:focus {
+outline: none;
+border-color: #323334;
+box-shadow: 0 0 8px rgba(76, 129, 175, 0.5);
+}
+
+.signup-options {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 6px 0;
+font-size: 14px;
+}
+
+.signup-options a {
+color: #333434;
+text-decoration: none;
+}
+
+.signup-options a:hover {
+text-decoration: underline;
+}
+
+.btn-signup {
+width: 100%;
+padding: 15px;
+background-color: #020e54;
+color: #fff;
+border: none;
+border-radius: 40px;
+font-size: 16px;
+font-weight: 500;
+cursor: pointer;
+transition: background-color 0.3s ease, 
+transform 0.3s ease;
+margin:20px 0px 8px;
+}
+
+.btn-signup:hover {
+background-color:#100451;
+transform: translateY(-3px);
+}
+
+.remember-me {
+display: flex;
+align-items: center;
+color: rgb(96, 95, 95);
+}
+
+.remember-me input {
+margin-right: 10px;
+border-radius: 40px;
+}
+
+.login-link{
+color: #000000;
+margin: 20px 0px 0px;
+font-size: 14px;
+color: #000000;
+text-align: center;
+font-weight: 400;
+
+}
+.login-link p a:hover{
+text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="tagline">Start Learning With Us!</div>
+    <div class="signup-container">
+        <h1>Sign Up <i class="fa-solid fa-right-to-bracket"></i></h1>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" class="input-field" placeholder="Username" autocomplete="off" required>
+            <input type="email" id="signupEmail" class="input-field" placeholder="E-mail" autocomplete="off" required>
+            <input type="password" id="signupPassword" class="input-field" placeholder="Password" autocomplete="off" required>
+            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" autocomplete="off" required>         
+            
+            <div class="signup-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="check" required>
+                    <label for="check">I agree to all the terms & conditions</label>
+                </div>
+            </div>
+            <input type="submit" class="btn-signup" value="Sign Up">
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('signupUsername').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // Store user details in localStorage
+            const userData = { username, email, password };
+            localStorage.setItem('userData', JSON.stringify(userData));
+            alert("Account created successfully!");
+            window.location.href = "dashboard.html";
+        });
+    </script>
+</body>
+</html>

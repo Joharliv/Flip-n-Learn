@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip n Learn</title>
+    <link rel="stylesheet" type="text/css" href="geometry.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+    <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                </li>
+                <li>
+                    <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                </li>
+                <li>
+                    <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                </li>
+                <li>
+                    <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                </li>
+                <li>
+                  <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                </label>
+            </h2>
+            <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+            <input type="search" placeholder="Search here" />
+            </div>
+            <div class="user-wrapper">
+                <img src="flashcard1.jpeg" width="40px" height="40px" alt="Flashcard">
+                <a href="#" id="profile-link"></a><h4>Profile</h4>
+            </div>
+        </header>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Definition</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Nuclear-Physics.jpg">
+                  <ul>
+                    <li>Nuclear Physics is the field of physics that studies atomic nuclei and their interactions. It involves understanding the forces that bind protons and neutrons together in the nucleus, as well as the processes of nuclear reactions and radioactive decay.</li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/jOGWgOV5LGk?si=FPctwGpVfmxiOa-z')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Key Concepts in Nuclear Physics</p>
+        </div>
+        <div class="card-back">
+            <ul>
+              <li><strong>The Atomic Nucleus:</strong> The nucleus is the core of an atom, consisting of protons and neutrons (collectively known as nucleons). The properties of nuclei, including size, mass, and binding energy, are central to nuclear physics.</li><br>
+              <li> <strong>Nuclear Forces:</strong>The nucleus is held together by the strong nuclear force, which is much stronger than the electromagnetic force but operates only over very short ranges.</li><br>
+              <li><strong>Nuclear Reactions:</strong>Nuclear reactions involve changes to an atom’s nucleus, which can release or absorb large amounts of energy.</li>
+            </ul>
+            </p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Applications of Nuclear Physics</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li><strong>Nuclear Power:</strong>Nuclear reactors use controlled fission reactions to generate energy, providing a significant source of electricity in many countries.</li><br>
+                <li><strong>Medical Applications:</strong>Radioactive isotopes are used in medical imaging (like PET scans) and cancer treatments (radiotherapy).</li><br>
+                <li><strong>Nuclear Weapons:</strong>Fission and fusion reactions are harnessed in atomic and hydrogen bombs, respectively.</li>
+            </ul>
+            <div class="button-container">
+              <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/mYcbW5PImZI?si=oLCHs8kxWAlts8qy')" class="youtube-button">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Key Differences and Connections</p>
+        </div>
+        <div class="card-back">
+            <ul>
+                <li>Quantum Mechanics focuses on the behavior of particles at very small scales (like electrons and photons), while Nuclear Physics deals with the structure and behavior of atomic nuclei.</li><br>
+                <li>Quantum mechanics principles apply to nuclear physics, as nuclei exhibit quantum behaviors, and understanding the strong nuclear force requires quantum theories.</li><br>
+                <li>Both quantum mechanics and nuclear physics have profoundly impacted technology and scientific understanding, leading to innovations in fields as diverse as computing, energy production, and medicine.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>

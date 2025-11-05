@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Revenue</p>
+              </div>
+              <div class="card-back">
+              <img src="images/Revenue.png">
+                  <ul>
+                  <li>
+                    Revenue is the income generated from normal business operations, typically from the sale of goods or services to customers.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/6wcgyH_D8so?si=y_Ef6il_6tsk6sue')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Gross Profit</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Gross Profit.png">
+        <ul>
+            <li>
+                Gross Profit is calculated as Revenue minus the Cost of Goods Sold (COGS). It indicates the profitability of core business activities before operating expenses.
+            </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Cost of Goods Sold</p>
+            </div>
+            <div class="card-back">
+              <img src="images/COGS.png">
+            <ul>
+                <li>
+                    Cost of Goods Sold represents the direct costs of producing goods or services sold by a company, including raw materials and direct labor, but excluding indirect costs.   
+                </li>    
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Fixed and Variable Expenses</p>
+            </div>
+            <div class="card-back">
+              <img src="images/fixed.png">
+                <ul>
+                    <li>
+                        Fixed expenses remain constant regardless of production levels (e.g., rent),</li><br>
+                        <li> Variable expenses fluctuate with production or sales volume (e.g., materials, commissions).</li>
+                    </li>
+                </ul>
+                <div class="button-container">
+                  <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/7c4R-cBIztE?si=sdrMjKtCbRgWPgZj')" class="youtube-button">
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p> Matching Principle</p>
+              </div>
+              <div class="card-back">
+              <img src="images/Matching Principle.png">
+                <ul>
+                  <li>
+                    The Matching Principle states that expenses should be recorded in the same period as the revenues they help generate, providing an accurate representation of profit.
+                  </li>    
+              </ul>
+              </div>
+            </div>
+          </div>
+    
+             </div>
+            </div>
+            <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+        
+        </section>
+          
+        
+        <script src="geometry.js" ></script>
+        <script src="dashboard.html"></script>
+        </body>
+        </html>

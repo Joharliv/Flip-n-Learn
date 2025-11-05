@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flip n Learn</title>
+        <link rel="stylesheet" type="text/css" href="geometry.css">
+        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/45a680a5be.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-book-open"></i> <span> Flip n Learn</span></h2>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" ><i class="fa-solid fa-house"></i><span> Home</span></a>
+                    </li>
+                    <li>
+                        <a href="recents.html"><i class="fa-solid fa-folder-open"></i><span> Recents</span></a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"><i class="fa-solid fa-heart"></i><span> Favourites</span></a>
+                    </li>
+                    <li>
+                        <a href="quizlet.changes.2.html"><i class="fa-solid fa-plus"></i><span> Create New</span></a>
+                    </li>
+                    <li>
+                      <a href="Saved flashcards.html"><i class="fa-solid fa-bookmark"></i><span> Saved Flashcards</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                    <div class="header-title"><i class="fa-solid fa-bars"></i> Home</div>
+                    </label>
+                </h2>
+                <div class="search-wrapper"><i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <label for="profile-upload" class="avatar-placeholder">
+                        <img id="profile-pic" alt="Profile" style="display:none;" /> <!-- Initially hidden -->
+                        <i id="profile-icon" class="fas fa-user"></i> <!-- This is the icon that will be replaced by the image -->
+                    </label>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;" />
+                    <h4>Profile</h4>
+                </div>
+            </header>
+        </div>
+    
+    
+    <section class="wrapper">
+      <i class="fa-solid fa-circle-arrow-left button" id="prev"></i>
+      <div class="card-container">
+        <div class="carousel">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <p>Indus Valley Civilization</p>
+              </div>
+              <div class="card-back">
+                  <img src="images/Indus Valley Civilization.png">
+                  <ul type="none">
+                  <li>
+                    The Indus Valley Civilization , also known as the Harappan Civilization, was one of the world’s earliest urban cultures, flourishing between 3300 and 1300 BCE. It developed along the Indus River and its surrounding regions. The civilization is known for its advanced urban planning, impressive architecture, and sophisticated trade systems.
+                  </li>
+                  </ul>
+                  <div class="button-container">
+                    <input type="button" value="Watch on YouTube" onclick="window.open('https://youtu.be/wIy10JCL5S0?si=PXIaqAuiLrwfG2-A')" class="youtube-button">
+                  </div>
+              </div>
+            </div>
+            </div>
+    
+    
+            
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Urban Planning and Architecture</p>
+        </div>
+        <div class="card-back">
+        <ul>
+            <li>
+                <h4>Street Layout:</h4> Streets in a grid pattern with intersecting main and secondary roads.
+            </li> <br>
+            <li>
+                <h4>Drainage System:</h4> An advanced underground drainage system with brick-lined sewers, showing concern for public hygiene.   
+            </li> <br> 
+            <li>
+                <h4>Buildings:</h4> Standardized fired bricks used for construction, with homes having access to private wells and bathrooms.
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Economy and Trade</p>
+        </div>
+        <div class="card-back">
+        <ul>
+            <li><h4>Agriculture:</h4>The economy was largely based on farming, with crops like wheat, barley, peas, and cotton. </li> <br>
+            <li><h4>Trade Networks:</h4> Evidence of trade with Mesopotamia, as indicated by seals, beads, and artifacts found in both regions.</li><br>
+            <li> <h4>Craftsmanship:</h4> Skilled artisans produced pottery, jewelry, and metal goods, and seals that were likely used for trade and identification. </li>    
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p>Indus Valley Script</p>
+        </div>
+        <div class="card-back">
+        <img src="images/Indus Valley Civilization Script.png">
+            <ul>
+                <li><h4>Script:</h4> Known as the Indus script, it is composed of symbols inscribed on seals, pottery, and other artifacts.
+                </li><br>
+                <li><h4>Undeciphered:</h4> Despite many efforts, the script remains undeciphered, limiting our understanding of the civilization’s language and literature. </li><br>
+                <li>
+                    <h4>Significance:</h4> The script is one of the earliest forms of writing, providing valuable but incomplete insights into their society and trade.
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Decline of the Indus Valley Civilization</p>
+          </div>
+          <div class="card-back">
+          <ul>
+              <li>
+                  <h4>Possible Causes:</h4> The civilization declined around 1900 BCE, likely due to climate change, river course shifts, floods, or invasions. 
+              </li> <br>
+              <li>
+                  <h4>Gradual Abandonment:</h4> Archaeological evidence suggests a gradual decline, with cities being abandoned rather than destroyed by sudden disaster.
+              <li> <br>
+                  <h4>Legacy:</h4>Despite its decline, the Indus Valley Civilization greatly influenced the cultures that followed, and its urban planning and craftsmanship remain influential in South Asian history.
+                  
+              </li>    
+          </ul>
+          </div>
+        </div>
+      </div>
+
+         </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right button" id="next"></i>
+    
+    </section>
+      
+    
+    <script src="geometry.js" ></script>
+    <script src="dashboard.js"></script>
+    </body>
+    </html>
